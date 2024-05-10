@@ -115,7 +115,7 @@
 
         function searchFolders(query) {
             $.ajax({
-                url: '/search_folder_names',
+                url: '/searchDbFol',
                 method: 'GET',
                 data: { query: query },
                 success: function (response) {
