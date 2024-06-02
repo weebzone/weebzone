@@ -1,0 +1,256 @@
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent),
+            radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent)
+    }
+
+    canvas {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+    }
+
+    .navbar {
+        opacity: 1;
+    }
+
+    .navbar form input {
+        background-color: #3e3d3dae;
+        border: none;
+    }
+
+    .navbar form button {
+        border: none;
+        text-align: center;
+        width: 60px;
+    }
+
+    .navbar-brand {
+        margin-left: 40px;
+    }
+
+    .navbar-switch .navbar-brand {
+        order: 2;
+    }
+
+    .navbar-switch .navbar-toggler {
+        order: 1;
+    }
+
+    .card {
+        border: none;
+        background-color: #00000000;
+    }
+
+    .movie-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        background: none;
+        width: 200px;
+        padding: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .movie-card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-head {
+        position: relative;
+    }
+
+    .card-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #f11932d2;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .movie-card:hover .card-overlay {
+        opacity: 1;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    .play {
+        margin: 10px;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+
+    .card-body {
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+
+    .card-title {
+        margin-top: 4px;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        color: #fff7f7;
+    }
+
+    .card-info {
+        font-size: 0.9rem;
+        color: #8d8b8b;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .carousel-cell {
+        margin-right: 10px;
+    }
+
+    .flickity-button:disabled {
+        display: none;
+    }
+
+    .main-carousel {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .movies-container {
+        display: inline-block;
+        position: relative;
+        font-size: larger;
+        font-weight: 700;
+        margin-left: 11%;
+        margin-bottom: 5px;
+        color: #aaa7a7;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        cursor: pointer;
+    }
+
+    .movies-container:hover .view-all {
+        opacity: 1;
+        transform: translateX(5px);
+    }
+
+    .view-all {
+        display: inline-block;
+        margin-left: 10px;
+        opacity: 0;
+        color: #f11932ee;
+
+
+        transition: opacity 0.3s, transform 0.3s;
+        transform: translateX(-5px);
+    }
+
+    .flickity-button {
+        background: #333;
+    }
+
+    .flickity-button:hover {
+        background: rgba(0, 255, 225, 0.525);
+
+    }
+
+    .flickity-prev-next-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .flickity-button-icon {
+        fill: white;
+    }
+
+    .flickity-prev-next-button.previous {
+        left: -40px;
+    }
+
+    .flickity-prev-next-button.next {
+        right: -40px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    @media (max-width: 980px) {
+        .navbar-toggler {
+            border: none;
+            position: relative;
+            right: 50%;
+            transform: translateX(-40%);
+            margin-right: 20px;
+        }
+
+        .main-carousel {
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+
+        .flickity-button {
+            background: #333;
+        }
+
+        .flickity-button:hover {
+            background: rgba(0, 255, 225, 0.525);
+        }
+
+        .flickity-prev-next-button {
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .flickity-button-icon {
+            fill: white;
+        }
+
+        .flickity-prev-next-button.previous {
+            left: 0px;
+        }
+
+        .flickity-prev-next-button.next {
+            right: 0px;
+        }
+
+        .movies-container {
+            margin-left: 4%;
+        }
+    }
